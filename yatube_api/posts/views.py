@@ -1,3 +1,7 @@
-from django.shortcuts import render
+# Python
+from django.urls import path, include
 
-# Create your views here.
+# Подключаем маршруты API
+urlpatterns = [
+    path("api/", include("api.urls")),
+]
